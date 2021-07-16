@@ -7,7 +7,7 @@ import {charactersdetails} from '../actions';
 
 const initialState = {
     quote : {},
-    episodes : {},
+    episodes : [],
     characters: [],
     characterdetail: {} 
 }
