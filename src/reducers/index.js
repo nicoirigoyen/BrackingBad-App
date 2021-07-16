@@ -4,7 +4,6 @@ import {addepisodes} from "../actions";
 import {charactersdetails} from '../actions';
 
 
-//==== Setear Estado Global Inicial ======//
 
 const initialState = {
     quote : {},
@@ -13,7 +12,6 @@ const initialState = {
     characterdetail: {} 
 }
 
-//==== Setear Reducers ======//
 function rootReducer(state = initialState, action){
 
     switch(action.type){
@@ -33,14 +31,9 @@ function rootReducer(state = initialState, action){
         case charactersdetails:
             return{...state,
                 characterdetail:  action.payload}
-            
-                  
-        
+             
         default:
                 return state;
-
-
-
 
 
     }

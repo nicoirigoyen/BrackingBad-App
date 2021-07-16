@@ -62,8 +62,6 @@ function mapStateToProps(state){
   }
 }
 
-
-//Actions
 function mapDispatchToProps(dispatch) {
   return {
     addEpisodes: () => dispatch(addEpisodes())

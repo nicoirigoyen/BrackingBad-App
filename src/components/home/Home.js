@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import logo from "../../img/logo.png";
 import "./Home.css";
 import {addQuote} from "../../actions";
 import {connect} from "react-redux";
-/*import las acciones y el connect para conectar toda la app*/
-
 
 function Home(props) {
  
@@ -30,8 +28,6 @@ function Home(props) {
   );
 
 };
-//Devolviendo un objeto, cuyo parámetro quote va a ser igual al quote del estado global
-//Con connect ese objeto devuelto pasa a formar parte de las props
 
 function mapStateToProps(state){
   return {
@@ -40,7 +36,7 @@ function mapStateToProps(state){
 }
 
 
-//Actions
+
 function mapDispatchToProps(dispatch) {
   return {
     addQuote: () => dispatch(addQuote())

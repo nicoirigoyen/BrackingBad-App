@@ -6,10 +6,6 @@ import {getCharacterDetails} from "../../actions";
 import { Link } from "react-router-dom";
 
 function CharacterDetail(props) {
-  /*
-    PISTA: podemos obtener lo que llegue por parametros con el hook useParams.
-    Que hace useParams? https://reactrouter.com/web/example/url-params
-    */
    const {id} = useParams();
    useEffect(() =>{
     props.getCharacterDetails(id);
@@ -39,11 +35,9 @@ function mapStateToProps(state){
 }
 
 
-//Actions
 function mapDispatchToProps(dispatch) {
   return {
     getCharacterDetails:(id)  => dispatch(getCharacterDetails(id))
-    //es indiferente el nombre del argumento
   }
 }
 
