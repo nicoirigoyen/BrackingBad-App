@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router";
 import "./CharacterDetail.css";
 import {connect} from 'react-redux';
 import {getCharacterDetails} from "../../actions";
-import { Link } from "react-router-dom";
 
 function CharacterDetail(props) {
    const {id} = useParams();

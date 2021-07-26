@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Spinner from "../Spinner";
 import "./Characters.css";
 import {addCharacters} from "../../actions";
-import {getCharacterDetails} from "../../actions";
 import {connect} from "react-redux";
 
 function Characters(props) {

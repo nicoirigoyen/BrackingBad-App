@@ -7,7 +7,7 @@ import {connect} from "react-redux";
 
 function Episodes(props) {
 
-  const [query, setQuery] = useState('');
+  // const [query, setQuery] = useState('');
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() =>{
@@ -19,7 +19,7 @@ function Episodes(props) {
   
 
   const handleChange = (q) => {
-    setQuery(q)
+   
   }
 
   const handleSubmit = (event) => {
