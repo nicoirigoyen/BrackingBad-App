@@ -7,15 +7,14 @@ import {connect} from "react-redux";
 
 function Episodes(props) {
 
-  // const [query, setQuery] = useState('');
+
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() =>{
     
     props.addEpisodes()
    setIsLoading(false);
-    
- },[])
+    },[])
   
 
   const handleChange = (q) => {
@@ -35,6 +34,7 @@ function Episodes(props) {
       
       <form onSubmit={(e) => handleSubmit(e)}>
         <input
+            className='inputSearch'
             type= 'text'
             placeholder='Search'
             onChange={((e)=> handleChange(e.target.value))}/>
@@ -58,7 +58,6 @@ function Episodes(props) {
 function mapStateToProps(state){
   return {
     episodes : state.episodes
-    
   }
 }
 

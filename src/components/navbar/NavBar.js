@@ -7,9 +7,9 @@ function NavBar() {
   return (
     <div className="navbar">
       
-        <div><Link exact to="/">Home</Link></div>
-        <div><Link to="/characters">Characters</Link></div>
-        <div><Link to="/episodes">Episodes</Link> </div>
+        <div className="link"><Link exact to="/">Home</Link></div>
+        <div className="link"><Link to="/characters">Characters</Link></div>
+        <div className="link"><Link to="/episodes">Episodes</Link> </div>
  
     </div>
   );

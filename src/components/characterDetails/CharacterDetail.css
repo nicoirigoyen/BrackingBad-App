@@ -3,6 +3,20 @@
     margin: 0 auto;
     text-align: center;
 }
+.CharacterDetail h1 {
+    font-family: Taviraj;
+    font-size: 26px;
+    text-decoration:underline;
+}
+.CharacterDetail h3 {
+    font-family: Taviraj;
+    font-size: 24px;
+    
+}
+.CharacterDetail h4 {
+    font-family: Taviraj;
+    font-size: 20px;
+}
 
 
 .CharacterDetail__Photo{

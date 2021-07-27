@@ -3,7 +3,40 @@
     margin: 0 auto;
     text-align: center;
 }
+.Characters h1{
+    font-family: Taviraj;
+    font-size: 40px;
+}
 
 .Characters__list li{
     list-style: none;
+    font-family: Taviraj;
+    font-size: 18px;
 }
+.inputSearch{
+    width: 20rem;
+    font-size: 18px;
+    
+    font-family: Taviraj;
+    outline: none; 
+}
+.inputSearch:focus {
+    border: none;
+    outline: none; 
+}
+
+.inputSearch:active {
+    border: none;
+    outline: none; 
+}
+
+@media screen and (min-width: 0px) and (max-width: 720px){
+    .inputSearch{
+        width: 10rem;
+        font-size: 18px;
+        height: 2rem;
+        font-family: Taviraj;
+        outline: none; 
+    }
+}
+

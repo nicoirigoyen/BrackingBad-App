@@ -41,6 +41,7 @@ function Characters(props) {
       <h1>List of Characters</h1>
         <form onSubmit={(e)=>handleSubmit(e)}>
           <input
+            className='inputSearch'
             type= 'text'
             placeholder='Search'
             onChange={((e)=> handleChange(e.target.value))}/>

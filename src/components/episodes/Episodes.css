@@ -2,7 +2,10 @@
   width: 80%;
   margin: 0 auto;
   text-align: center;
+  font-family: Taviraj;
+  font-size: 18px;
 }
+
 
 .Episodes__list {
   list-style: none;

@@ -4,7 +4,17 @@
     text-align: center;
     
 }
+.quote h3{
+    font-family: Taviraj;
+}
+.quote p{
+    font-family: Taviraj;
+}
 
 .Home__logo{
     width: 50%;
+}
+.githubLogo{
+   margin-left: 90%;
+    
 }
