@@ -15,7 +15,7 @@ function CharacterDetail(props) {
 
   return (
     <div className="CharacterDetail">
-      <h1>Character Details</h1>
+      <h1>Character Detail</h1>
       
       <h3>{props.charactersdetail.name}</h3>
       <h4>{props.charactersdetail.category}</h4>

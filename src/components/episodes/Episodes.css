@@ -10,4 +10,8 @@
 .Episodes__list {
   list-style: none;
   text-align: center;
+  
+}
+.list{
+  font-size: 20px;
 }

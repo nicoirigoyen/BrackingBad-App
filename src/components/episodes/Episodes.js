@@ -7,18 +7,18 @@ import {connect} from "react-redux";
 
 function Episodes(props) {
 
-
+  const [query, setQuery] = useState('');
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() =>{
     
-    props.addEpisodes()
-   setIsLoading(false);
-    },[])
+    props.addEpisodes(query)
+    setIsLoading(false);
+    },[query])
   
 
   const handleChange = (q) => {
-   
+    setQuery(q)
   }
 
   const handleSubmit = (event) => {
@@ -33,11 +33,11 @@ function Episodes(props) {
       <h1>Episodes List</h1>
       
       <form onSubmit={(e) => handleSubmit(e)}>
-        <input
+        {/* <input
             className='inputSearch'
             type= 'text'
             placeholder='Search'
-            onChange={((e)=> handleChange(e.target.value))}/>
+            onChange={((e)=> handleChange(e.target.value))}/> */}
       </form>
 
       <ul className="Episodes__list">
@@ -46,7 +46,7 @@ function Episodes(props) {
         ) : (
           
             props.episodes && props.episodes.map((i) =>
-            <li>{i.title} - Season {i.season}</li>)
+            <li className='list'>{i.title} - Season {i.season}</li>)
 
         )}
         
