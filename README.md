@@ -1,4 +1,4 @@
-Esta es una aplicacion que eh realizado en el segundo modulo de HENRY en donde la consigna era poder realizar una aplicacion consumiendo diferentes endpoints de una API externa,
+Esta es una aplicacion que realice en el segundo modulo de HENRY en donde la consigna era poder realizar una aplicacion consumiendo diferentes endpoints de una API externa,
 en este caso de Breacking Bad.
 
 En la plicacion se debia poder visualizar en la pantalla principal una frase aleatorea de la serie con el nombre el nombre del personaje, una barra de navegacion
